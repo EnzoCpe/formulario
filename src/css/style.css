@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    background: url(../images/bg-repeat.jpg) 800px;
+    width: 800px;
+    height: 402px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+}
+
+.duvida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 300px;
+}
+
+.duvida .titulo {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 287px;
+    height: 46px;
+    position: absolute;
+    top: 146px;
+    left: 50px;
+    line-height: 23px;
+}
+
+.duvida .descricao {
+    font-size: 15px;
+    font-weight: 400;
+    width: 300px;
+    height: 54px;
+    position: absolute;
+    left: 50px;
+    top: 203px;
+}
+
+.formulario {
+    position: absolute;
+    background-color: #fff;
+    width: 340px;
+    height: 378px;
+    right: 50px;
+}
+
+.formulario .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+}
+
+.formulario .info .requerido {
+    border: 1px solid #000;
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.formulario .info .requerido::placeholder {
+    font-weight: 700;
+    color: #A8A8A8;
+}
+
+.formulario .info .requerido:focus {
+    padding-left: 10px;
+}
+
+.formulario .info input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.formulario .info .campo {
+    padding-bottom: 10px;
+    color: #F52E2E;
+    align-self: baseline;
+    font-size: 8px;
+    opacity: 0;
+}
+
+.formulario .info .mensagem {
+    width: 300px;
+    height: 100px;
+    resize: none;
+    padding-top: 8px;
+}
+
+.formulario .info .mensagem:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.aviso {
+    width: 145px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 15px;
+    align-self: baseline;
+    margin: 2px;
+}
+
+.aviso p {
+    margin: -7px;
+}
+
+.btn input {
+    border-radius: 5px;
+    width: 300px;
+    height: 41px;
+    background: #3CCC87;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.formulario .info .validado {
+    border: 1px solid #00C22B;
+    margin-bottom: 19.2px;
+}
+
+.formulario .info .nao-validado {
+    border: 1px solid #F52E2E;
+}
+
+.formulario .info .alerta {
+    opacity: 1;
+}
